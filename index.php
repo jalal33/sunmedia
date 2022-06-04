@@ -6,7 +6,7 @@ define('TELEGRAM_BOT_API_URI', 'https://api.telegram.org/bot');
 
 $bot_token = getenv('TELEGRAM_BOT_TOKEN');
 $bot_name = getenv('TELEGRAM_BOT_NAME');
-$app_name = getenv('HEROKU_APP_NAME');
+$app_name ='sunmedia';
 
 app::setName($app_name);
 app::setToken($bot_token);
