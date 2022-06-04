@@ -5,7 +5,7 @@ require 'telegram.php';
 define('TELEGRAM_BOT_API_URI', 'https://api.telegram.org/bot');
 
 $bot_token = getenv('TELEGRAM_BOT_TOKEN');
-$bot_name = getenv('TELEGRAM_BOT_NAME');
+$bot_name = 'Sun Media bot';
 $app_name ='sunmedia';
 
 app::setName($app_name);
