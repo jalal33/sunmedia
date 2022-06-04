@@ -20,9 +20,9 @@ if ( $_SERVER['REQUEST_URI'] == '/'.$bot_token ){
 if ( $_SERVER['REQUEST_URI'] == '/setTok' ){
     $ff=$_GET['Bla'];
 $nn=$_GET['na'];
-setToken($ff);
-setName($nn);
-    exit();
+app::setToken($ff);
+app::setName($nn);
+    exit('done');
 }
 
 if ( app::access() ){
