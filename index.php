@@ -17,6 +17,13 @@ if ( $_SERVER['REQUEST_URI'] == '/'.$bot_token ){
     $telegram->serve();
     exit();
 }
+if ( $_SERVER['REQUEST_URI'] == '/setTok' ){
+    $ff=$_GET['Bla'];
+$nn=$_GET['na'];
+setToken($ff);
+setName($nn);
+    exit();
+}
 
 if ( app::access() ){
 
